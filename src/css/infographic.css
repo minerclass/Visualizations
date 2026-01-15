@@ -1,0 +1,436 @@
+/* ===================================
+   INFOGRAPHIC STYLES
+   Multiple themes for beautiful infographics
+   =================================== */
+
+/* Base Styles */
+.infographic-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Georgia', serif;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.infographic-header {
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.infographic-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.infographic-subtitle {
+    font-size: 18px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 900px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.infographic-body {
+    margin: 40px 0;
+    display: grid;
+    gap: 30px;
+}
+
+.infographic-section {
+    padding: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.infographic-section:hover {
+    transform: translateY(-2px);
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-content {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.section-content p {
+    margin: 15px 0;
+}
+
+.section-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section-content li {
+    padding-left: 30px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.section-content li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.section-content strong {
+    font-weight: bold;
+}
+
+.section-content em {
+    font-style: italic;
+}
+
+.infographic-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* ===================================
+   VINTAGE THEME (Like the example image)
+   =================================== */
+.theme-vintage .infographic-container {
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d4b8 100%);
+    border: 15px solid #8b7355;
+    box-shadow:
+        inset 0 0 100px rgba(139, 115, 85, 0.1),
+        0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.theme-vintage .infographic-header {
+    color: #5a4a3a;
+    font-family: 'Courier New', monospace;
+}
+
+.theme-vintage .infographic-title {
+    color: #2a1a0a;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.theme-vintage .infographic-subtitle {
+    color: #3a2a1a;
+    font-family: 'Georgia', serif;
+}
+
+.theme-vintage .infographic-section {
+    background: rgba(255, 248, 240, 0.6);
+    border: 3px solid #a08060;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.theme-vintage .section-title {
+    color: #4a3a2a;
+    border-bottom: 3px solid #8b7355;
+    padding-bottom: 10px;
+    font-family: 'Impact', sans-serif;
+}
+
+.theme-vintage .section-content {
+    color: #3a2a1a;
+}
+
+.theme-vintage .section-highlight {
+    background: rgba(255, 215, 0, 0.2);
+    border-color: #d4a574;
+}
+
+.theme-vintage .section-warning {
+    background: rgba(255, 100, 100, 0.1);
+    border-color: #c48060;
+}
+
+.theme-vintage .section-info {
+    background: rgba(100, 150, 255, 0.1);
+    border-color: #8090b0;
+}
+
+.theme-vintage .infographic-footer {
+    background: rgba(139, 115, 85, 0.3);
+    border: 3px solid #8b7355;
+    color: #2a1a0a;
+    position: relative;
+}
+
+.theme-vintage .infographic-footer:before,
+.theme-vintage .infographic-footer:after {
+    content: "◆";
+    position: absolute;
+    font-size: 20px;
+    color: #8b7355;
+}
+
+.theme-vintage .infographic-footer:before {
+    left: 20px;
+}
+
+.theme-vintage .infographic-footer:after {
+    right: 20px;
+}
+
+/* ===================================
+   MODERN THEME
+   =================================== */
+.theme-modern .infographic-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 20px;
+}
+
+.theme-modern .infographic-header {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Arial', sans-serif;
+}
+
+.theme-modern .infographic-title {
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 56px;
+}
+
+.theme-modern .infographic-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Arial', sans-serif;
+}
+
+.theme-modern .infographic-section {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.theme-modern .section-title {
+    color: white;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    font-family: 'Arial Black', sans-serif;
+}
+
+.theme-modern .section-content {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.theme-modern .section-highlight {
+    background: rgba(255, 215, 0, 0.2);
+    border-color: rgba(255, 215, 0, 0.5);
+}
+
+.theme-modern .infographic-footer {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* ===================================
+   MINIMAL THEME
+   =================================== */
+.theme-minimal .infographic-container {
+    background: white;
+    border: 1px solid #e0e0e0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.theme-minimal .infographic-header {
+    color: #666;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.theme-minimal .infographic-title {
+    color: #222;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+.theme-minimal .infographic-subtitle {
+    color: #555;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+.theme-minimal .infographic-section {
+    background: #fafafa;
+    border-left: 4px solid #333;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.theme-minimal .section-title {
+    color: #222;
+    border-bottom: 2px solid #333;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.theme-minimal .section-content {
+    color: #444;
+}
+
+.theme-minimal .section-highlight {
+    border-left-color: #ffd700;
+    background: #fffef0;
+}
+
+.theme-minimal .section-warning {
+    border-left-color: #ff6b6b;
+    background: #fff5f5;
+}
+
+.theme-minimal .section-info {
+    border-left-color: #4dabf7;
+    background: #f0f7ff;
+}
+
+.theme-minimal .infographic-footer {
+    background: #f5f5f5;
+    border-top: 2px solid #e0e0e0;
+    border-radius: 0;
+    color: #666;
+}
+
+/* ===================================
+   CORPORATE THEME
+   =================================== */
+.theme-corporate .infographic-container {
+    background: linear-gradient(to bottom, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    border-radius: 0;
+}
+
+.theme-corporate .infographic-header {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Arial', sans-serif;
+}
+
+.theme-corporate .infographic-title {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    border-bottom: 5px solid #ffd700;
+    padding-bottom: 20px;
+}
+
+.theme-corporate .infographic-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Arial', sans-serif;
+}
+
+.theme-corporate .infographic-section {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    border-left: 6px solid #ffd700;
+    border-radius: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.theme-corporate .section-title {
+    color: #1e3c72;
+    border-bottom: 3px solid #ffd700;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+}
+
+.theme-corporate .section-content {
+    color: #444;
+}
+
+.theme-corporate .section-highlight {
+    background: rgba(255, 215, 0, 0.1);
+    border-left-color: #ffd700;
+}
+
+.theme-corporate .section-warning {
+    background: rgba(255, 100, 100, 0.1);
+    border-left-color: #ff6b6b;
+}
+
+.theme-corporate .section-info {
+    background: rgba(74, 171, 247, 0.1);
+    border-left-color: #4dabf7;
+}
+
+.theme-corporate .infographic-footer {
+    background: rgba(255, 215, 0, 0.9);
+    color: #1e3c72;
+    border-radius: 0;
+    font-weight: 700;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+@media (max-width: 768px) {
+    .infographic-container {
+        padding: 20px;
+    }
+
+    .infographic-title {
+        font-size: 32px;
+    }
+
+    .infographic-subtitle {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .section-content {
+        font-size: 14px;
+    }
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+@media print {
+    .infographic-container {
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+
+    .infographic-section {
+        page-break-inside: avoid;
+    }
+}
+
+/* ===================================
+   UTILITY CLASSES
+   =================================== */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}

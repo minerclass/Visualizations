@@ -1,0 +1,34 @@
+{
+  "header": "Q4 2025 Business Report",
+  "title": "Record Growth & Market Expansion",
+  "subtitle": "Achieving unprecedented results through innovation and strategic partnerships",
+  "sections": [
+    {
+      "title": "Revenue Growth",
+      "content": "Q4 revenue increased by **47%** compared to last year, reaching $12.5M. Key drivers:\n\n- New product launches: $4.2M\n- International expansion: $3.8M\n- Existing customer growth: $2.9M\n- Strategic partnerships: $1.6M",
+      "style": "highlight"
+    },
+    {
+      "title": "Customer Acquisition",
+      "content": "Successfully onboarded **2,847 new customers** across all segments:\n\n- Enterprise clients: 342\n- Mid-market: 891\n- Small business: 1,614\n\nCustomer retention rate improved to **94%**, up from 89% in Q3.",
+      "style": "default"
+    },
+    {
+      "title": "Product Innovation",
+      "content": "Launched **3 major features** that received exceptional user feedback:\n\n- AI-powered analytics dashboard (4.8/5 rating)\n- Mobile app redesign (4.9/5 rating)\n- Integration marketplace (4.7/5 rating)\n\nR&D investment increased by 35% to accelerate future development.",
+      "style": "info"
+    },
+    {
+      "title": "Market Position",
+      "content": "Strengthened competitive position in key markets:\n\n- Ranked #2 in customer satisfaction\n- Expanded to 15 new countries\n- Achieved 12% market share (up from 8%)\n- Named \"Best Innovation\" by TechAward 2025",
+      "style": "default"
+    },
+    {
+      "title": "Looking Ahead",
+      "content": "Q1 2026 priorities focus on sustainable growth:\n\n- Launch enterprise tier subscription\n- Open 3 new regional offices\n- Expand partner network by 50%\n- Invest $5M in customer success initiatives",
+      "style": "highlight"
+    }
+  ],
+  "footer": "Together, we're building the future of business technology",
+  "theme": "corporate"
+}

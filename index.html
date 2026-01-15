@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic Generator - Transform Articles into Visual Stories</title>
+    <link rel="stylesheet" href="src/css/infographic.css">
+    <link rel="stylesheet" href="src/css/editor.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>📊 Infographic Generator</h1>
+            <p class="tagline">Transform articles and reports into stunning visual infographics</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Editor Panel -->
+            <div class="editor-panel">
+                <div class="panel-header">
+                    <h2>Input Content</h2>
+                    <div class="controls">
+                        <select id="theme-selector" class="theme-select">
+                            <option value="vintage">Vintage Theme</option>
+                            <option value="modern">Modern Theme</option>
+                            <option value="minimal">Minimal Theme</option>
+                            <option value="corporate">Corporate Theme</option>
+                        </select>
+                        <button id="generate-btn" class="btn btn-primary">Generate Infographic</button>
+                        <button id="example-btn" class="btn btn-secondary">Load Example</button>
+                        <button id="export-btn" class="btn btn-secondary">Export HTML</button>
+                    </div>
+                </div>
+
+                <div class="format-tabs">
+                    <button class="tab-btn active" data-format="markdown">Markdown</button>
+                    <button class="tab-btn" data-format="json">JSON</button>
+                    <button class="tab-btn" data-format="plain">Plain Text</button>
+                </div>
+
+                <textarea id="input-text" class="editor-textarea" placeholder="Enter your content here...
+
+Markdown Example:
+# Main Title
+### Subtitle or tagline
+
+## Section 1
+Your content here...
+
+## Section 2
+- Bullet point 1
+- Bullet point 2
+
+> Footer text or quote"></textarea>
+
+                <div class="help-text">
+                    <strong>Quick Tips:</strong>
+                    <ul>
+                        <li><strong>Markdown:</strong> Use # for titles, ## for sections, - for bullets</li>
+                        <li><strong>JSON:</strong> Structured format with title, sections, theme</li>
+                        <li><strong>Plain Text:</strong> Auto-detected paragraphs and structure</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Preview Panel -->
+            <div class="preview-panel">
+                <div class="panel-header">
+                    <h2>Preview</h2>
+                    <div class="controls">
+                        <button id="fullscreen-btn" class="btn btn-icon">⛶</button>
+                    </div>
+                </div>
+                <div id="preview-container" class="preview-container">
+                    <div class="empty-state">
+                        <div class="empty-icon">📄</div>
+                        <h3>No Preview Yet</h3>
+                        <p>Enter content and click "Generate Infographic" to see your creation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="app-footer">
+            <p>Created with ♥ for better visual communication | Supports Markdown, JSON, and Plain Text</p>
+        </footer>
+    </div>
+
+    <!-- Templates -->
+    <template id="infographic-template">
+        <div class="infographic-container">
+            <div class="infographic-header" data-field="header"></div>
+            <div class="infographic-title" data-field="title"></div>
+            <div class="infographic-subtitle" data-field="subtitle"></div>
+            <div class="infographic-body" data-field="sections"></div>
+            <div class="infographic-footer" data-field="footer"></div>
+        </div>
+    </template>
+
+    <script src="src/js/infographic-renderer.js"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
