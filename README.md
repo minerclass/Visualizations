@@ -1,2 +1,2 @@
 # Visualizations
-Practice - Grok
+Practice 
